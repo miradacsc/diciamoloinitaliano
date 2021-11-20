@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diciamolo in italiano</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4a227d830f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/logo.ico" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <img src="img/logo1.png" alt="logo globo dialogo con bandera italiana">
+                <li class="logo"><a href="index.html">Diciamolo in italiano!</a></li>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="vocabulario.html">Vocabulario</a></li>
+                <li class="item"><a href="expresiones.html">Expresiones</a></li>
+                <li class="item"><a href="cultura.html">Cultura</a></li>
+                <li class="item"><a href="recursos.html">Recursos</a></li>
+                <li class="item button"><a class="activo1" href="contacto.html">Contacto</a></li>
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="formulario">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="Juan" required>
+                    <div class="valid-feedback">
+                        Válido!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="Perez" required>
+                    <div class="valid-feedback">
+                        Válido!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="exampleFormControlInput1" class="form-label">Dejanos tu Email</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="mail" class="form-control" id="exampleFormControlInput1" placeholder="juan@ejemplo.com" required>
+                        <div class="invalid-feedback">
+                            Por favor ingrese un mail válido.
+                        </div>
+                        <div class="valid-feedback">
+                            Suena bien!
+                        </div>
+                    </div>
+                </div>
+                
+                 <div class="col-md-6">
+                    <label for="validationTextarea" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="validationTextarea" placeholder="¡Contanos en que podemos ayudarte!" required></textarea>
+                    <div class="invalid-feedback">
+                        ¡No te olvides del mensaje!<i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="valid-feedback">
+                        Suena bien!
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">País</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Elija...</option>
+                        <option>Argentina</option>
+                        <option>Brasil</option>
+                        <option>Chile</option>
+                        <option>Colombia</option>
+                        <option>Estados Unidos</option>
+                        <option>España</option>
+                        <option>Mexico</option>
+                        <option>Paraguay</option>
+                        <option>Peru</option>
+                        <option>Uruguay</option>
+                        <option>Otro</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Por favor elija un país.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label">Código Postal</label>
+                    <input type="number" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                        Inserte un código postal válido.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Acepto los términos y Condiciones
+                        </label>
+                        <div class="invalid-feedback">
+                            Debe aceptar los términos antes de registrarse.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">¡Contáctame!</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+<div class="container"></div>
+<footer>
+    <section class="ft-main">
+        <div class="ft-main-item">
+            <p>Suscribite a nuestra newsletter.</p>
+            <form>
+                <input type="email" id="mail" name="email" placeholder="Ingrese su email" required>
+                <input type="submit" value="Suscribite">
+            </form>
+        </div>
+    </section>
+    <!-- Footer social -->
+    <section class="ft-social">
+        <ul class="ft-social-list">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitch"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </section>
+
+    <!-- Footer legal -->
+    <section class="ft-legal">
+        <ul class="ft-legal-list">
+            <li><a href="#">Términos &amp; Condiciones</a></li>
+            <li><a href="#">Políticas de Privacidad</a></li>
+            <li>&copy; 2021 Copyright Miradacsc.</li>
+        </ul>
+    </section>
+</footer>
+
+</html>
